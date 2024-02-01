@@ -3,6 +3,7 @@ package com.example.kmw_lab2
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -14,12 +15,13 @@ class EmailAdapter(private val emails: List<Email>) : RecyclerView.Adapter<Email
         val senderText: TextView
         val titleText: TextView
         val summaryText: TextView
-
+        val dogImage: ImageView
 
         init {
             senderText = itemView.findViewById(R.id.senderTv)
             titleText = itemView.findViewById(R.id.titleTv)
             summaryText = itemView.findViewById(R.id.summaryTv)
+            dogImage = itemView.findViewById(R.id.dogView)
         }
     }
 
